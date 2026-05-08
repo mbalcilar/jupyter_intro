@@ -1,4 +1,7 @@
 .DS_Store
+_quarto.yml
+index.qmd
+styles.css
 
 /.quarto/
 **/*.quarto_ipynb
