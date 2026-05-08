@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "index.html#learning-goals",
+    "href": "index.html#learning-goals",
+    "title": "Fly Through Jupyter",
+    "section": "Learning goals",
+    "text": "Learning goals\nBy the end of this short tutorial, students should be able to:\n\nexplain the difference between Command Mode and Edit Mode\nchange a cell to Markdown, Code, or Raw\nrun cells using keyboard shortcuts\nuse a small set of shortcuts to work faster in Jupyter\n\n\n\n\n\n\n\nNote\n\n\nThe goal is not to memorize every shortcut. Start with the few that save the most time."
+  },
+  {
+    "objectID": "index.html#why-keyboard-shortcuts-matter",
+    "href": "index.html#why-keyboard-shortcuts-matter",
+    "title": "Fly Through Jupyter",
+    "section": "Why keyboard shortcuts matter",
+    "text": "Why keyboard shortcuts matter\nJupyter notebooks are built from cells.\nEach cell can hold:\n\nPython code\nMarkdown text\nraw text for special export workflows\n\nShortcuts help you move quickly between these tasks without constantly using the mouse."
+  },
+  {
+    "objectID": "index.html#the-key-idea-two-modes",
+    "href": "index.html#the-key-idea-two-modes",
+    "title": "Fly Through Jupyter",
+    "section": "The key idea: two modes",
+    "text": "The key idea: two modes"
+  },
+  {
+    "objectID": "index.html#command-mode-vs.-edit-mode",
+    "href": "index.html#command-mode-vs.-edit-mode",
+    "title": "Fly Through Jupyter",
+    "section": "Command Mode vs. Edit Mode",
+    "text": "Command Mode vs. Edit Mode\nIn Command Mode, Jupyter listens for notebook-level commands.\nIn Edit Mode, Jupyter lets you type inside a cell."
+  },
+  {
+    "objectID": "index.html#switching-modes",
+    "href": "index.html#switching-modes",
+    "title": "Fly Through Jupyter",
+    "section": "Switching modes",
+    "text": "Switching modes\n\n\n\nGoal\nShortcut\n\n\n\n\nSwitch to Command Mode\nEsc\n\n\nSwitch to Edit Mode\nEnter\n\n\n\nClassroom tip: When a shortcut does not work, first press Esc and try again."
+  },
+  {
+    "objectID": "index.html#the-beginner-shortcut-map",
+    "href": "index.html#the-beginner-shortcut-map",
+    "title": "Fly Through Jupyter",
+    "section": "The beginner shortcut map",
+    "text": "The beginner shortcut map"
+  },
+  {
+    "objectID": "index.html#change-cell-type",
+    "href": "index.html#change-cell-type",
+    "title": "Fly Through Jupyter",
+    "section": "Change cell type",
+    "text": "Change cell type\nUse these shortcuts in Command Mode.\n\n\n\nCell type\nShortcut\nUse it for\n\n\n\n\nMarkdown\nM\nexplanations, headings, instructions\n\n\nCode\nY\nPython code\n\n\nRaw\nR\nunformatted text, nbconvert workflows"
+  },
+  {
+    "objectID": "index.html#run-cells",
+    "href": "index.html#run-cells",
+    "title": "Fly Through Jupyter",
+    "section": "Run cells",
+    "text": "Run cells\n\n\n\nAction\nShortcut\n\n\n\n\nRun cell and move down\nShift + Enter\n\n\nRun cell and stay\nCtrl + Enter or Cmd + Enter\n\n\n\nFor teaching, Shift + Enter is the most useful habit."
+  },
+  {
+    "objectID": "index.html#insert-and-delete-cells",
+    "href": "index.html#insert-and-delete-cells",
+    "title": "Fly Through Jupyter",
+    "section": "Insert and delete cells",
+    "text": "Insert and delete cells\nUse these in Command Mode.\n\n\n\nAction\nShortcut\n\n\n\n\nInsert cell above\nA\n\n\nInsert cell below\nB\n\n\nDelete selected cell\nD, then D again\n\n\nUndo cell deletion\nZ"
+  },
+  {
+    "objectID": "index.html#live-demo-1-cell-types",
+    "href": "index.html#live-demo-1-cell-types",
+    "title": "Fly Through Jupyter",
+    "section": "Live demo 1: cell types",
+    "text": "Live demo 1: cell types\nAsk students to do this in a notebook:\n\nClick a cell.\nPress Esc.\nPress M to make it Markdown.\nType a heading such as ## My first notebook note.\nPress Shift + Enter.\nPress Y to make the next cell a Code cell."
+  },
+  {
+    "objectID": "index.html#live-demo-2-run-python-code",
+    "href": "index.html#live-demo-2-run-python-code",
+    "title": "Fly Through Jupyter",
+    "section": "Live demo 2: run Python code",
+    "text": "Live demo 2: run Python code\n\n# A small example for practicing Shift + Enter\ncourse = \"BANL 3100\"\ntopic = \"Jupyter shortcuts\"\n\nprint(course)\nprint(topic)"
+  },
+  {
+    "objectID": "index.html#live-demo-3-small-data-example",
+    "href": "index.html#live-demo-3-small-data-example",
+    "title": "Fly Through Jupyter",
+    "section": "Live demo 3: small data example",
+    "text": "Live demo 3: small data example\n\nimport pandas as pd\n\nscores = pd.DataFrame({\n    \"hours_studied\": [1, 2, 3, 4, 5, 6],\n    \"quiz_score\": [62, 68, 73, 78, 85, 91]\n})\n\nscores"
+  },
+  {
+    "objectID": "index.html#live-demo-4-plotnine-example",
+    "href": "index.html#live-demo-4-plotnine-example",
+    "title": "Fly Through Jupyter",
+    "section": "Live demo 4: plotnine example",
+    "text": "Live demo 4: plotnine example\n\nfrom plotnine import ggplot, aes, geom_point, geom_smooth, labs, theme_minimal\n\n(\n    ggplot(scores, aes(x=\"hours_studied\", y=\"quiz_score\"))\n    + geom_point(size=3)\n    + geom_smooth(method=\"lm\", se=False)\n    + labs(\n        title=\"Study time and quiz score\",\n        x=\"Hours studied\",\n        y=\"Quiz score\"\n    )\n    + theme_minimal()\n)"
+  },
+  {
+    "objectID": "index.html#command-palette",
+    "href": "index.html#command-palette",
+    "title": "Fly Through Jupyter",
+    "section": "Command palette",
+    "text": "Command palette\nThe command palette is useful when you forget a shortcut.\n\nClassic Notebook: P in Command Mode\nJupyterLab: Cmd + Shift + C on Mac or Ctrl + Shift + C on Windows/Linux"
+  },
+  {
+    "objectID": "index.html#toggle-output",
+    "href": "index.html#toggle-output",
+    "title": "Fly Through Jupyter",
+    "section": "Toggle output",
+    "text": "Toggle output\nSometimes a cell output becomes too large.\nIn classic Jupyter Notebook:\n\npress Esc\nselect the cell\npress O"
+  },
+  {
+    "objectID": "index.html#undo-cell-deletion",
+    "href": "index.html#undo-cell-deletion",
+    "title": "Fly Through Jupyter",
+    "section": "Undo cell deletion",
+    "text": "Undo cell deletion\nDeleted the wrong cell?\nPress Z in Command Mode."
+  },
+  {
+    "objectID": "index.html#comment-and-uncomment-code",
+    "href": "index.html#comment-and-uncomment-code",
+    "title": "Fly Through Jupyter",
+    "section": "Comment and uncomment code",
+    "text": "Comment and uncomment code\nUse this in Edit Mode.\n\n\n\nSystem\nShortcut\n\n\n\n\nMac\nCmd + /\n\n\nWindows/Linux\nCtrl + /"
+  },
+  {
+    "objectID": "index.html#function-help-with-docstrings",
+    "href": "index.html#function-help-with-docstrings",
+    "title": "Fly Through Jupyter",
+    "section": "Function help with docstrings",
+    "text": "Function help with docstrings\nWhen your cursor is inside a function call, press:\nShift + Tab\nThis opens help for the function."
+  },
+  {
+    "objectID": "index.html#multiple-cursors",
+    "href": "index.html#multiple-cursors",
+    "title": "Fly Through Jupyter",
+    "section": "Multiple cursors",
+    "text": "Multiple cursors\nMultiple cursors are useful when editing similar lines.\n\nMac: hold Option, then drag\nWindows/Linux: hold Alt, then drag"
+  },
+  {
+    "objectID": "index.html#practice-drill-5-minutes",
+    "href": "index.html#practice-drill-5-minutes",
+    "title": "Fly Through Jupyter",
+    "section": "Practice drill: 5 minutes",
+    "text": "Practice drill: 5 minutes\nOpen the companion notebook and complete this sequence:\n\nCreate a Markdown cell above the first code cell.\nAdd a heading and one sentence.\nCreate a Code cell below it.\nRun the code using Shift + Enter.\nDelete one practice cell.\nUndo the deletion with Z."
+  },
+  {
+    "objectID": "index.html#jupyterlab-and-vs-code-notes",
+    "href": "index.html#jupyterlab-and-vs-code-notes",
+    "title": "Fly Through Jupyter",
+    "section": "JupyterLab and VS Code notes",
+    "text": "JupyterLab and VS Code notes\nMost core shortcuts are the same:\n\nM for Markdown\nY for Code\nA and B for new cells\nShift + Enter to run and move down\n\nSome shortcuts may differ, especially R for Raw cells and command-palette shortcuts."
+  },
+  {
+    "objectID": "index.html#what-to-memorize-first",
+    "href": "index.html#what-to-memorize-first",
+    "title": "Fly Through Jupyter",
+    "section": "What to memorize first",
+    "text": "What to memorize first\nStart with only these:\n\n\n\nShortcut\nMeaning\n\n\n\n\nEsc\nCommand Mode\n\n\nEnter\nEdit Mode\n\n\nM / Y / R\nMarkdown / Code / Raw\n\n\nShift + Enter\nRun and move down\n\n\nA / B\nInsert above / below\n\n\nD,D / Z\nDelete / undo deletion"
+  },
+  {
+    "objectID": "index.html#closing-idea",
+    "href": "index.html#closing-idea",
+    "title": "Fly Through Jupyter",
+    "section": "Closing idea",
+    "text": "Closing idea\nA notebook is not just code.\nIt is a communication document:\n\nMarkdown explains the work.\nCode performs the work.\nOutput shows the evidence.\n\nGood shortcuts help students focus on the story instead of the interface."
+  },
+  {
+    "objectID": "index.html#imagesource-note",
+    "href": "index.html#imagesource-note",
+    "title": "Fly Through Jupyter",
+    "section": "Image/source note",
+    "text": "Image/source note\nThe animated Jupyter examples in this slide deck are stored locally in the images/ folder. They are drawn from the Data School Jupyter shortcuts article included in the user-provided source material."
+  }
+]

@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Fly Through Jupyter"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Slides
+
+format:
+  html:
+    theme: simple
