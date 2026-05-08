@@ -265,6 +265,3 @@ It is a communication document:
 
 Good shortcuts help students focus on the story instead of the interface.
 
-## Image/source note
-
-The animated Jupyter examples in this slide deck are stored locally in the `images/` folder. They are drawn from the Data School Jupyter shortcuts article included in the user-provided source material.

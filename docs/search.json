@@ -159,12 +159,5 @@
     "title": "Fly Through Jupyter",
     "section": "Closing idea",
     "text": "Closing idea\nA notebook is not just code.\nIt is a communication document:\n\nMarkdown explains the work.\nCode performs the work.\nOutput shows the evidence.\n\nGood shortcuts help students focus on the story instead of the interface."
-  },
-  {
-    "objectID": "index.html#imagesource-note",
-    "href": "index.html#imagesource-note",
-    "title": "Fly Through Jupyter",
-    "section": "Image/source note",
-    "text": "Image/source note\nThe animated Jupyter examples in this slide deck are stored locally in the images/ folder. They are drawn from the Data School Jupyter shortcuts article included in the user-provided source material."
   }
 ]
